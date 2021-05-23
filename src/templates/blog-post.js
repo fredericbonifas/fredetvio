@@ -27,7 +27,9 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <PostContent content={content} />
-            <Features gridItems={pictures.blurbs} />
+            {pictures && pictures.blurbs && pictures.blurbs.length ? (
+              <Features gridItems={pictures.blurbs} />
+            ) : null}
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
