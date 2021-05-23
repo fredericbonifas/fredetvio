@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Features from '../components/Features'
 
 export const BlogPostTemplate = ({
   content,
@@ -12,6 +13,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  intro,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -25,6 +27,7 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <PostContent content={content} />
+            <Features gridItems={intro.blurbs} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -49,6 +52,9 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  intro: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
 }
 
 const BlogPost = ({ data }) => {
@@ -61,6 +67,7 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
@@ -83,6 +90,18 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         tags
+        intro {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+        }
       }
     }
   }

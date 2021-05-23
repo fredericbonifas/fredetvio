@@ -87,7 +87,6 @@ export default () => (
                 slug
               }
               frontmatter {
-                description
                 title
                 templateKey
                 date(formatString: "YYYY")

@@ -5,27 +5,42 @@ date: 2020-12-21T15:04:10.000Z
 place: Montrouge
 featuredpost: false
 featuredimage: /img/products-grid2.jpg
+intro:
+  blurbs:
+    - image: /img/coffee.png
+      text: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variety of coffee beans grown with great care for the environment and
+        local communities. Check our post or contact us directly for current
+        availability.
+    - image: /img/coffee-gear.png
+      text: >
+        We offer a small, but carefully curated selection of brewing gear and
+        tools for every taste and experience level. No matter if you roast your
+        own beans or just bought your first french press, you’ll find a gadget
+        to fall in love with in our shop.
+    - image: /img/tutorials.png
+      text: >
+        Love a great cup of coffee, but never knew how to make one? Bought a
+        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
+        to help. You can schedule a custom 1-on-1 consultation with our baristas
+        to learn anything you want to know about coffee roasting and brewing.
+        Email us or call the store for details.
+    - image: /img/meeting-space.png
+      text: >
+        We believe that good coffee has the power to bring people together.
+        That’s why we decided to turn a corner of our shop into a cozy meeting
+        space where you can hang out with fellow coffee lovers and learn about
+        coffee making techniques. All of the artwork on display there is for
+        sale. The full price you pay goes to the artist.
 tags:
   - dressing
   - contreplaqué
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+Nous avons conçu et réalisé ce dressing en deux parties, entre la chambre et la salle de bain parentale d'un appartement.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+La première partie a été dessinée pour intégrer quatre portes anciennes fournies par le client, en chêne et intégrant un miroir.
 
-## A little history
-
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
-
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
-
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
-
-## What you need to know before trying
-
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
-
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
-
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Le deuxième dressing est intégralement fabriqué en contreplaqué de bouleau, choisi pour sa bonne résistance mécanique et pour son aspect clair qui ne concurrence pas les portes anciennes.
