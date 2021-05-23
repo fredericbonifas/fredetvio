@@ -2,7 +2,6 @@
 templateKey: index-page
 title: Fred et Vio
 image: /img/img_20201220_205210_bokeh.jpg
-heading: Great coffee with a conscience
 subheading: Agencement et rénovation
 mainpitch:
   title: Why Kaldi
