@@ -52,9 +52,6 @@ class BlogRoll extends React.Component {
                   </p>
                 ) : null}
                 <p>
-                  {post.frontmatter.description}
-                  <br />
-                  <br />
                   <Link className="button" to={post.fields.slug}>
                     En savoir plus →
                   </Link>

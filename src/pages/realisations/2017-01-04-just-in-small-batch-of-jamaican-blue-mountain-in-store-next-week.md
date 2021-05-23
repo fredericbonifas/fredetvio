@@ -1,10 +1,8 @@
 ---
 templateKey: blog-post
-title: Double dressing dans une suite parentale
+title: Double dressing dans une chambre parentale
 date: 2020-12-21T15:04:10.000Z
 place: Montrouge
-description: We’re proud to announce that we’ll be offering a small batch of
-  Jamaica Blue Mountain coffee beans in our store next week.
 featuredpost: false
 featuredimage: /img/products-grid2.jpg
 tags:
