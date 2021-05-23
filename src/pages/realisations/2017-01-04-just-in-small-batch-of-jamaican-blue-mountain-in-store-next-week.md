@@ -5,7 +5,7 @@ date: 2020-12-21T15:04:10.000Z
 place: Montrouge
 featuredpost: false
 featuredimage: /img/products-grid2.jpg
-intro:
+pictures:
   blurbs:
     - image: /img/coffee.png
       text: >
