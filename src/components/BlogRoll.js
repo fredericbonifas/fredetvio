@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faClock,
+  faBuilding
+} from '@fortawesome/free-solid-svg-icons'
 
 class BlogRoll extends React.Component {
   render() {
@@ -18,6 +23,24 @@ class BlogRoll extends React.Component {
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
+                <p className="post-meta is-parent column is-12">
+                  <Link
+                    className="title has-text-primary is-size-4"
+                    to={post.fields.slug}
+                  >
+                    {post.frontmatter.title}
+                  </Link>
+                </p>
+                <p className="column columns">
+                  <p className="post-meta is-parent column is-6">
+                    <FontAwesomeIcon icon={faClock} size="1x" className="pt-icon" />
+                    {post.frontmatter.date}
+                  </p>
+                  <p className="post-meta is-parent column is-6">
+                    <FontAwesomeIcon icon={faBuilding} size="1x" className="pt-icon" />
+                    {post.frontmatter.place}
+                  </p>
+                </p>
                 {post.frontmatter.featuredimage ? (
                   <p className="featured-thumbnail is-parent column is-12">
                     <PreviewCompatibleImage
@@ -28,16 +51,8 @@ class BlogRoll extends React.Component {
                     />
                   </p>
                 ) : null}
-                <p className="post-meta is-parent column is-12">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                </p>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
@@ -70,15 +85,16 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
               id
               fields {
                 slug
               }
               frontmatter {
+                description
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "YYYY")
+                place
                 featuredpost
                 featuredimage {
                   childImageSharp {

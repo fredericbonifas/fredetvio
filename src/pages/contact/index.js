@@ -9,7 +9,7 @@ export default () => (
           <h1>Téléphone</h1>
           <p>06 72 65 28 07</p>
           <h1>Email</h1>
-          <p>fredericbonifas@gmail.com</p>
+          <p>fredetvio.atelier@gmail.com</p>
         </div>
       </div>
     </section>
