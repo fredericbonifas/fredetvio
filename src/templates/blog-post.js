@@ -111,7 +111,6 @@ export const pageQuery = graphql`
                 full: gatsbyImageData(layout: FULL_WIDTH)
               }
             }
-            text
           }
         }
       }
