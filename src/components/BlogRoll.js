@@ -18,11 +18,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+              <article className="blog-list-item tile is-child box notification">
                 <p className="post-meta is-parent column is-12">
                   <Link
                     className="title has-text-primary is-size-4"
@@ -85,7 +81,6 @@ export default () => (
                 templateKey
                 date(formatString: "YYYY")
                 place
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 1200, quality: 100) {
