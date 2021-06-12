@@ -9,11 +9,8 @@ tags:
 pictures:
   blurbs:
     - image: /img/img_20200509_170749.jpg
-      text: Détail
     - image: /img/img_20200509_164844.jpg
-      text: Après rénovation
     - image: /img/img_20200321_172842.jpg
-      text: Avant rénovation
 ---
 Rénovation d'une cage d'escalier dans les parties communes d'un immeuble.
 

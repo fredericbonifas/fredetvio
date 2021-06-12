@@ -10,18 +10,9 @@ tags:
 pictures:
   blurbs:
     - image: /img/img_20201220_205229.jpg
-      text: |-
-        
-        Vue d'ensemble
     - image: /img/img_20201220_205210_bokeh.jpg
-      text: |-
-        
-        Dressing en contreplaqué de bouleau
     - image: /img/img_20201221_122919_bokeh.jpg
-      text: Détail de serrure
     - image: /img/img_20201221_123201.jpg
-      text: |
-        Reflet de miroir
 ---
 
 Nous avons conçu et réalisé ce dressing en deux parties, entre la chambre et la salle de bain parentale d'un appartement.
