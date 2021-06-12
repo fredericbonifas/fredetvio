@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
-import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import Features from '../components/Features'
+
+import Gallery from '@browniebroke/gatsby-image-gallery'
+
 
 export const BlogPostTemplate = ({
   content,
@@ -14,6 +15,7 @@ export const BlogPostTemplate = ({
   title,
   helmet,
   pictures,
+  images,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -28,7 +30,7 @@ export const BlogPostTemplate = ({
             </h1>
             <PostContent content={content} />
             {pictures && pictures.blurbs && pictures.blurbs.length ? (
-              <Features gridItems={pictures.blurbs} />
+              <Gallery images={images} />
             ) : null}
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -61,6 +63,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const images = post.frontmatter.pictures.blurbs.map(({ image }) => image.childImageSharp)
 
   return (
     <Layout>
@@ -70,6 +73,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         pictures={post.frontmatter.pictures}
+        images={images}
       />
     </Layout>
   )
@@ -96,9 +100,13 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 800, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+                thumb: gatsbyImageData(
+                  width: 270
+                  height: 270
+                  placeholder: BLURRED
+                  transformOptions: {fit: COVER, cropFocus: CENTER}
+                )
+                full: gatsbyImageData(layout: FULL_WIDTH)
               }
             }
             text
