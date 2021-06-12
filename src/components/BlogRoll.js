@@ -31,15 +31,9 @@ class BlogRoll extends React.Component {
                     {post.frontmatter.title}
                   </Link>
                 </p>
-                <p className="column columns">
-                  <p className="post-meta is-parent column is-6">
-                    <FontAwesomeIcon icon={faClock} size="1x" className="pt-icon" />
-                    {post.frontmatter.date}
-                  </p>
-                  <p className="post-meta is-parent column is-6">
-                    <FontAwesomeIcon icon={faBuilding} size="1x" className="pt-icon" />
-                    {post.frontmatter.place}
-                  </p>
+                <p className="column project-meta">
+                  {post.frontmatter.place}<br />
+                  {post.frontmatter.date}
                 </p>
                 {post.frontmatter.featuredimage ? (
                   <p className="featured-thumbnail is-parent column is-12">
