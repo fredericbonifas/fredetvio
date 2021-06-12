@@ -63,7 +63,9 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  const images = post.frontmatter.pictures.blurbs.map(({ image }) => image.childImageSharp)
+  const images =   post.frontmatter.pictures && post.frontmatter.pictures.blurbs && post.frontmatter.pictures.blurbs.length ? (
+    post.frontmatter.pictures.blurbs.map(({ image }) => image.childImageSharp)
+  ) : null
 
   return (
     <Layout>
