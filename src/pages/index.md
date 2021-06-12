@@ -10,7 +10,7 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-description: Nous concevons et nous réalisons des agencements sur mesure autour de Toulouse.
+description: Nous concevons et réalisons des agencements sur mesure autour de Toulouse.
 main:
   heading: Great coffee with no compromises
   description: >
