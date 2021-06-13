@@ -1,12 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faClock,
-  faBuilding
-} from '@fortawesome/free-solid-svg-icons'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 
 class BlogRoll extends React.Component {
   render() {
@@ -33,12 +29,7 @@ class BlogRoll extends React.Component {
                 </p>
                 {post.frontmatter.featuredimage ? (
                   <p className="featured-thumbnail is-parent column is-12">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    />
+                    <GatsbyImage image={getImage(post.frontmatter.featuredimage)} alt={`featured image thumbnail for post ${post.frontmatter.title}`} />
                   </p>
                 ) : null}
                 <p>
@@ -84,9 +75,12 @@ export default () => (
                 place
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 1200, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(
+                      width: 500
+                      height: 500
+                      placeholder: BLURRED
+                      transformOptions: {fit: COVER, cropFocus: CENTER}
+                    )
                   }
                 }
               }
