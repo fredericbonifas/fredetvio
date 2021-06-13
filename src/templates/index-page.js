@@ -77,7 +77,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="has-text-weight-semibold is-size-4-mobile is-size-4-tablet is-size-3-widescreen">
                       Nos dernières réalisations
                     </h3>
                     <BlogRoll />
