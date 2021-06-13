@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Rénovation d'une cage d'escalier
-date: 11/2020
+date: 2020-11
 place: Toulouse
 featuredimage: /img/img_20200509_170749.jpg
 tags:

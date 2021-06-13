@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Double dressing dans une chambre parentale
-date: 12/2020
+date: 2020-12
 place: Montrouge
 featuredimage: /img/img_20201220_205229.jpg
 tags:
