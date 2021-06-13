@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", date_format: "MM.YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", date_format: "MM/YYYY", format: "MM/YYYY"}
       - {label: "Place", name: "place", widget: "string"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
