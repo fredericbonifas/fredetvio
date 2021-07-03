@@ -14,9 +14,8 @@ pictures:
     - image: /img/img_20201221_122919_bokeh.jpg
     - image: /img/img_20201221_123201.jpg
 ---
+Conception et réalisation de ce dressing en deux parties, entre la chambre et la salle de bain parentale d'un appartement.
 
-Nous avons conçu et réalisé ce dressing en deux parties, entre la chambre et la salle de bain parentale d'un appartement.
+La première partie a été dessinée pour intégrer quatre portes anciennes fournies par le client. Nous avons rénové ces portes en chêne avec miroir pour les intégrer dans la façade. L'aménagement intérieur comprend un bloc de quatre tiroirs, de nombreuses penderies et des étagères réglables.
 
-La première partie a été dessinée pour intégrer quatre portes anciennes fournies par le client, en chêne et intégrant un miroir.
-
-Le deuxième dressing est intégralement fabriqué en contreplaqué de bouleau, choisi pour sa bonne résistance mécanique et pour son aspect clair qui ne concurrence pas les portes anciennes.
+Le deuxième dressing est fabriqué en contreplaqué de bouleau. Il intègre sept grands tiroirs sur mesure, une penderie et de nombreuses étagères.
