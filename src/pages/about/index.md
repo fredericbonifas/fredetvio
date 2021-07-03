@@ -3,16 +3,14 @@ templateKey: about-page
 path: /about
 title: À propos
 ---
-### Bienvenue
+### Nos services
 
-Nous sommes Frédéric Bonifas et Violette Crignon, deux anciens ingénieurs en informatique et en machines médicales. 
+Nous vous proposons nos prestations en conception et réalisation de rangements sur mesure adaptés à votre lieu de vie : dressing, bibliothèque, cuisine, meuble TV, meuble de salle de bains etc.
 
-### Notre offre
-
-Conception et réalisation de rangements sur mesure adaptés à votre lieu de vie, dressing, biblio, cuisine, meubles TV, salle de bains etc.
-
-Travaux de rénovation attenants tels que création de cloison, pose de verrière ou de portes intérieures, enduit, peinture et carrelage
+Nous pouvons également intervenir sur les travaux de rénovation attenants à l'agencement tels que création de cloison, pose de verrière ou de portes intérieures, enduit, peinture et carrelage.
 
 Rénovation des parquets anciens et pose de nouveaux parquets
 
-### Bisou
+### Qui sommes-nous
+
+Nous sommes Frédéric Bonifas et Violette Crignon, deux anciens ingénieurs en informatique et en machines médicales.
