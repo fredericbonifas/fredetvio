@@ -14,3 +14,5 @@ Nous réalisons la pose de parquets ainsi que la rénovation des parquets ancien
 ### Qui sommes-nous
 
 Nous sommes Frédéric Bonifas et Violette Crignon, deux anciens ingénieurs en informatique et en biomédical. Nous mettons en oeuvre notre expérience professionnelle et notre envie de réaliser les agencements que nous concevons pour vos projets. Frédéric est titulaire d'un CAP menuisier.
+
+![](/img/fredetvio_about.jpg)
