@@ -74,10 +74,15 @@ export const IndexPageTemplate = ({
                   <div className="columns">
                     <div className="column is-12">
                       <IndexContent content={content} />
+                      <div className="column is-12 has-text-centered">
+                        <Link className="btn" to="/about">
+                          En savoir plus sur nos prestations
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-4-mobile is-size-4-tablet is-size-3-widescreen">
+                    <h3 className="has-text-weight-semibold is-size-3-mobile is-size-3-tablet is-size-2-widescreen">
                       Nos dernières réalisations
                     </h3>
                     <BlogRoll />
