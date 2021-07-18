@@ -3,6 +3,7 @@ module.exports = {
     title: 'Fred et Vio - Agencement et rénovation',
     description:
       'Artisans en agencement et rénovation à Toulouse',
+    siteUrl: `https://www.fredetvio.com`,
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
