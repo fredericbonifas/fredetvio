@@ -1,8 +1,18 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+
 import Layout from '../../components/Layout'
 
-export default () => (
+
+const ContactPage = ({
+  data: {
+    site: {
+      siteMetadata: { title },
+    },
+  },
+}) => (
   <Layout>
+  <Helmet title={`${title} - Contact`} />
     <section className="section">
       <div className="container">
         <div className="content">
@@ -15,3 +25,15 @@ export default () => (
     </section>
   </Layout>
 )
+
+export default ContactPage
+
+export const tagPageQuery = graphql`
+  query ContactQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

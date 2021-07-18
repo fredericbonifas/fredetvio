@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import { graphql, Link } from 'gatsby'
@@ -34,7 +35,7 @@ export const BlogPostTemplate = ({
             ) : null}
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+                <h4>Catégories</h4>
                 <ul className="taglist">
                   {tags.map((tag) => (
                     <li key={tag + `tag`}>
@@ -69,6 +70,7 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title={`${data.site.siteMetadata.title} - ${post.frontmatter.title}`} />
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -91,6 +93,11 @@ export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
