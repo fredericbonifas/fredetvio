@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
-class BlogRoll extends React.Component {
+class BlogRollIndex extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -45,7 +45,7 @@ class BlogRoll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+BlogRollIndex.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -56,10 +56,11 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query BlogRollIndexQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          limit: 2
         ) {
           edges {
             node {
@@ -88,6 +89,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <BlogRollIndex data={data} count={count} />}
   />
 )
