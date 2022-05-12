@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Espace de travail dans un salon
+title: Agencement d'un espace de travail dans un salon
 date: 2022-04
 place: Toulouse
 featuredimage: /img/278422609_970180220275548_5818897909311769274_n_17942019574945800.webp
