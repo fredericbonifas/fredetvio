@@ -17,7 +17,7 @@ const ContactPage = ({
       <div className="container">
         <div className="content">
           <h1>Téléphone</h1>
-          <p>06 72 65 28 07</p>
+          <p>06 52 32 76 19</p>
           <h1>Email</h1>
           <p>fredetvio.atelier@gmail.com</p>
         </div>
